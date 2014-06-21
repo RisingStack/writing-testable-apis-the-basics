@@ -45,7 +45,7 @@ The test runner will sequentially run each test case, while the assertion librar
 will check if the expected value equals the outcome.
 
 But enough of the theory, let's setup our test runner and assertion library!
-For this post, we will use mocha as our test runner, and chaijs as our assertion library.
+For this post, we will use mocha as our test runner, and chai as our assertion library.
 
 ### Adding mocha to your project
 
@@ -70,14 +70,14 @@ run using the `npm test` command.
 This will work without installing mocha globally, as npm will look for `node_modules/.bin`, and
 place it on the `PATH`.
 
-### Adding chaijs to your project
+### Adding chai to your project
 
 ```
 npm install chai --save-dev
 ```
 
-Then using [chai](http://chaijs.com) it is time to write the first test case, just to demonstrate
-how mocha and chaijs plays together.
+Then using [chai](http://chai.com) it is time to write the first test case, just to demonstrate
+how mocha and chai plays together.
 
 ```
 // test/string.js
