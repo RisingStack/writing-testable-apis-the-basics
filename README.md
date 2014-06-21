@@ -44,6 +44,9 @@ In order to run our test cases, we need a test runner and an assertion library.
 The test runner will sequentially run each test case, while the assertion library
 will check if the expected value equals the outcome.
 
+But enough of the theory, let's setup our test runner and assertion library!
+For this post, we will use mocha as our test runner, and chaijs as our assertion library.
+
 
 
 ## Making your codebase modular - time for unit tests
