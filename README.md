@@ -18,7 +18,9 @@
 
 # Writing testable APIs
 
-<placeholder-for-the-intro-text>
+I remember writing my first test-cases - it was anything but a mess. Testing done right is not easy.
+It is not just about how you write your tests, but also how you structure your entire codebase.
+This post intends to clear that up in the context of REST APIs.
 
 ## Unit tests
 
