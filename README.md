@@ -36,9 +36,15 @@ All our unit tests are passing, great! But how will the system as a whole functi
 This is where integration tests come in.
 
 During integration testing unit tested modules are combined to verify functional and
-performance requirements. 
+performance requirements.
 
 ## Setting up your test runner
+
+In order to run our test cases, we need a test runner and an assertion library.
+The test runner will sequentially run each test case, while the assertion library
+will check if the expected value equals the outcome.
+
+
 
 ## Making your codebase modular - time for unit tests
 
