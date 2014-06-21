@@ -38,7 +38,7 @@ This is where integration tests come in.
 During integration testing unit tested modules are combined to verify functional and
 performance requirements.
 
-## Setting up your test runner
+## Setting up your test environment
 
 In order to run our test cases, we need a test runner and an assertion library.
 The test runner will sequentially run each test case, while the assertion library
