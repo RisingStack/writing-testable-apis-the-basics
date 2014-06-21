@@ -47,7 +47,26 @@ will check if the expected value equals the outcome.
 But enough of the theory, let's setup our test runner and assertion library!
 For this post, we will use mocha as our test runner, and chaijs as our assertion library.
 
+### Adding mocha to your project
 
+```
+npm install mocha --save-dev
+mkdir test
+```
+
+It will install mocha and put it as a development dependency to your package.json.
+Then you should put all your test cases under the `test` folder.
+
+Also, it is convenient to put it into your `package.json`'s scripts section, so it can be
+run using the `npm test` command.
+
+```
+  "scripts": {
+    "test": "mocha test"
+  }
+```
+
+### Adding chaijs to your project
 
 ## Making your codebase modular - time for unit tests
 
