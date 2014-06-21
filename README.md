@@ -66,10 +66,17 @@ run using the `npm test` command.
   }
 ```
 
+This will work without installing mocha globally, as npm will look for `node_modules/.bin`, and
+place it on the `PATH`.
+
 ### Adding chaijs to your project
 
 ```
 npm install chai --save-dev
+```
+
+```
+
 ```
 
 ## Making your codebase modular - time for unit tests
