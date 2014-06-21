@@ -33,7 +33,10 @@ at your tests, and get a basic understanding of what is going on in your modules
 ## Integration tests
 
 All our unit tests are passing, great! But how will the system as a whole function?
-That is where integration tests come in. 
+This is where integration tests come in.
+
+During integration testing unit tested modules are combined to verify functional and
+performance requirements. 
 
 ## Setting up your test runner
 
