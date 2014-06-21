@@ -92,7 +92,7 @@ describe('String\'s', function () {
 });
 ```
 
-The above test can be run with 'npm test'.
+The above test can be run with `npm test`.
 
 ## Making your codebase modular - time for unit tests
 
