@@ -54,7 +54,7 @@ npm install mocha --save-dev
 mkdir test
 ```
 
-It will install mocha and put it as a development dependency to your package.json.
+It will install mocha and put it as a development dependency to your `package.json`.
 Then you should put all your test cases under the `test` folder.
 
 Also, it is convenient to put it into your `package.json`'s scripts section, so it can be
@@ -67,6 +67,10 @@ run using the `npm test` command.
 ```
 
 ### Adding chaijs to your project
+
+```
+npm install chai --save-dev
+```
 
 ## Making your codebase modular - time for unit tests
 
