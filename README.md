@@ -15,3 +15,19 @@
 > 6. Writing integration tests with hippie
 >   - when writing integration tests, we do not mock out the database
 > 7. Mocking out APIs using nock (example: integration testing microservices)
+
+# Writing testable APIs
+
+<placeholder-for-the-intro-text>
+
+## Unit tests
+
+## Integration tests
+
+## Setting up your test runner
+
+## Making your codebase modular - time for unit tests
+
+## Putting the pieces together - writing integration tests
+
+## Mock out third-party APIs
