@@ -16,7 +16,7 @@
 >   - when writing integration tests, we do not mock out the database
 > 7. Mocking out APIs using nock (example: integration testing microservices)
 
-# Writing testable APIs
+# Writing testable REST APIs
 
 I remember writing my first test-cases - it was anything but a mess. Testing done right is not easy.
 It is not just about how you write your tests, but also how you structure your entire codebase.
