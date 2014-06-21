@@ -32,6 +32,9 @@ at your tests, and get a basic understanding of what is going on in your modules
 
 ## Integration tests
 
+All our unit tests are passing, great! But how will the system as a whole function?
+That is where integration tests come in. 
+
 ## Setting up your test runner
 
 ## Making your codebase modular - time for unit tests
