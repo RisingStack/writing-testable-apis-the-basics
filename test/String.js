@@ -1,5 +1,3 @@
-var expect = require('chai').expect;
-
 describe('String\'s', function () {
 
   describe('indexOf method', function () {
