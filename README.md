@@ -24,6 +24,12 @@ This post intends to clear that up in the context of REST APIs.
 
 ## Unit tests
 
+Unit tests are the basic building block of tests, where each test case is independent from
+others. The goal of unit tests to individually test if parts of the application are correct.
+
+Also, unit tests provide a living documentation of the system. Your fellow developer can look
+at your tests, and get a basic understanding of what is going on in your modules.
+
 ## Integration tests
 
 ## Setting up your test runner
