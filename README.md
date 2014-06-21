@@ -54,8 +54,9 @@ npm install mocha --save-dev
 mkdir test
 ```
 
-It will install mocha and put it as a development dependency to your `package.json`.
-Then you should put all your test cases under the `test` folder.
+It will install [mocha](http://visionmedia.github.io/mocha/) and put it as a development
+dependency to your `package.json`. Then you should put all your test cases
+under the `test` folder.
 
 Also, it is convenient to put it into your `package.json`'s scripts section, so it can be
 run using the `npm test` command.
@@ -75,7 +76,19 @@ place it on the `PATH`.
 npm install chai --save-dev
 ```
 
+Then using [chai](http://chaijs.com) it is time to write the first test case, just to demonstrate
+how mocha and chaijs plays together.
+
 ```
+var expect = require('chai').expect;
+
+describe('String\'s', function () {
+  describe('indexOf method', function () {
+    it('returns -1 if character is not found in the string', function (){
+      expect('string'.indexOf('p')).to.equal(-1);
+    });
+  });
+});
 
 ```
 
