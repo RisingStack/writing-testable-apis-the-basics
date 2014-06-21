@@ -80,6 +80,7 @@ Then using [chai](http://chaijs.com) it is time to write the first test case, ju
 how mocha and chaijs plays together.
 
 ```
+// test/string.js
 var expect = require('chai').expect;
 
 describe('String\'s', function () {
@@ -89,8 +90,9 @@ describe('String\'s', function () {
     });
   });
 });
-
 ```
+
+The above test can be run with 'npm test'.
 
 ## Making your codebase modular - time for unit tests
 
