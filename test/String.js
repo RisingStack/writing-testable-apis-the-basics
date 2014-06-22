@@ -1,9 +1,10 @@
-describe('String\'s', function () {
+describe('Math', function () {
 
-  describe('indexOf method', function () {
+  describe('#max', function () {
 
-    it('returns -1 if character is not found in the string', function (){
-      expect('string'.indexOf('p')).to.equal(-1);
+    it('returns the biggest number from the arguments', function () {
+      var max = Math.max(1, 2, 10, 3);
+      expect(max).to.equal(10);
     });
 
   });

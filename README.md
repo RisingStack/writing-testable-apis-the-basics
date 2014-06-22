@@ -67,9 +67,9 @@ how mocha and chai plays together.
 // test/string.js
 var expect = require('chai').expect;
 
-describe('String\'s', function () {
-  describe('indexOf method', function () {
-    it('returns -1 if character is not found in the string', function (){
+describe('Math', function () {
+  describe('#max', function () {
+    it('', function (){
       expect('string'.indexOf('p')).to.equal(-1);
     });
   });
