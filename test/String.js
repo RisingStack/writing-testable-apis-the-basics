@@ -1,3 +1,5 @@
+var expect = require('chai').expect;
+
 describe('Math', function () {
 
   describe('#max', function () {

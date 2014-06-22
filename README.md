@@ -85,8 +85,10 @@ The magic word here is: TDD, meaning Test-drive development.
 TDD is the process of writing an initially failing test case, that defines
 a function - this is where you design the interfaces of your unit.
 
-After this all you have to do is make the tests pass by implementing the described
+After that all you have to do is make the tests pass by implementing the described
 functionality.
+
+
 
 ## Putting the pieces together - writing integration tests
 
