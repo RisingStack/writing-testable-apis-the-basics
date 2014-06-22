@@ -1,23 +1,25 @@
-# Writing testable REST APIs
+# Writing testable HTTP APIs
 
-I remember writing my first test cases - it was everything but nice and clean. Testing done right is not easy.
-It is not just about how you write your tests, but also how you structure your entire codebase.
-This post intends to clear that up in the context of REST APIs.
+I remember writing my first test cases - it was everything but nice and clean.
+Testing done right is not easy.
+It is not just about how you write your tests, but also how you design your entire codebase.
+This post intends to clear that up in the context of HTTP APIs.
 
 ## Unit tests
 
 Unit tests are the basic building block of tests, where each test case is independent from
-others. The goal of unit tests to individually test if parts of the application are correct.
+others. Unit tests provide a living documentation of the system. Unit tests are
+extremely valuable for design feedback: one looking at your test cases can figure out easily what
+the given unit does, how you engineered it, what interfaces does it expose.
 
-Also, unit tests provide a living documentation of the system. Your fellow developer can look
-at your tests, and get a basic understanding of what is going on in your modules.
+As a side effect, unit tests can verify if your units work correctly.
 
 ## Integration tests
 
 All our unit tests are passing, great! But how will the system as a whole function?
 This is where integration tests come in.
 
-During integration testing unit tested modules are combined to verify functional and
+During integration testing unit tested parts are combined to verify functional and
 performance requirements.
 
 ## Setting up your test environment
@@ -95,7 +97,7 @@ global.expect = require('chai').expect;
 ## Making your codebase modular - time for unit tests
 
 - mocking out DB
-- structuring the codebase
+- designing the codebase
 
 ## Putting the pieces together - writing integration tests
 
