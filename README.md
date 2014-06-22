@@ -81,7 +81,12 @@ The above test can be run with `npm test`.
 
 ## Designing your codebase - time for unit tests
 
+The magic word here is: TDD, meaning Test Drive Development.
+TDD is the process of writing an initially failing test case, that defines
+a function - this is where you design the interfaces of your unit.
 
+After this all you have to do is make the tests pass by implementing the described
+functionality.
 
 ## Putting the pieces together - writing integration tests
 
