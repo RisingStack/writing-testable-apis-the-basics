@@ -1,4 +1,4 @@
-# Writing testable HTTP APIs
+# Writing testable HTTP APIs - the basics
 
 I remember writing my first test cases - it was everything but nice and clean.
 Testing done right is not easy.
@@ -77,22 +77,6 @@ describe('String\'s', function () {
 ```
 
 The above test can be run with `npm test`.
-
-Also, one can pass options to mocha, to change its default behavior. To do this, place a `mocha.opts`
-file in your 'test' directory.
-
-```
---reporter spec
---require test/setup
-```
-
-The above example `mocha.opts` sets the reporter to the spec one, and requires a file: `test/setup.js`.
-This can be used to require chai globally, so you do not need to require at the beginning of
-every file:
-
-```
-global.expect = require('chai').expect;
-```
 
 ## Making your codebase modular - time for unit tests
 
