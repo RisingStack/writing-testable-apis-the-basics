@@ -89,9 +89,11 @@ After that all you have to do is make the tests pass by implementing the describ
 functionality.
 
 When writing unit tests, we do not want to deal with the given unit's dependencies,
-so we want to use mocks instead of them. Mocks are special objects that simulates the
-behavior of the mocked out dependency. For this purpose we are going to use
+so we want to use mocks instead of them. Mocks are special objects that simulate the
+behavior of the mocked out dependencies. For this purpose we are going to use
 [Sinon.JS](http://sinonjs.org).
+
+
 
 ## Putting the pieces together - writing integration tests
 
