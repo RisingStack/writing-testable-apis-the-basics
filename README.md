@@ -8,7 +8,7 @@ This post intends to clear that up in the context of HTTP APIs.
 ## Unit tests
 
 Unit tests are the basic building block of tests, where each test case is independent from
-others. Unit tests provide a living documentation of the system. Unit tests are
+others. Unit tests provide a living documentation of the system and are
 extremely valuable for design feedback: one looking at your test cases can figure out easily what
 the given unit does, how you engineered it, what interfaces does it expose.
 
