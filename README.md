@@ -79,10 +79,9 @@ describe('Math', function () {
 
 The above test can be run with `npm test`.
 
-## Making your codebase modular - time for unit tests
+## Designing your codebase - time for unit tests
 
-- mocking out DB
-- designing the codebase
+
 
 ## Putting the pieces together - writing integration tests
 
