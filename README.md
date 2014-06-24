@@ -93,6 +93,38 @@ so we want to use mocks instead of them. Mocks are special objects that simulate
 behavior of the mocked out dependencies. For this purpose we are going to use
 [Sinon.JS](http://sinonjs.org).
 
+Let's take an example of mocking out MongoDB. Sure, first you will need `sinon` installed.
+
+```
+npm install sinon --save-dev
+```
+
+As we are doing TDD, first let's write our (initially) failing unit test for a Mongoose model.
+It will be a modell called `User` with a method `findAllUsers`.
+
+```javascript
+var sinon = require('sinon');
+var expect = require('chai').expect;
+
+var mongoose = require('mongoose');
+var handler = require('./unit');
+var User = mongoose.model('User');
+
+describe('User', function() {
+  it('returns all the users', function(done) {
+    var allUsers = [ 'user1', 'user2' ];
+    var req = { query: { world: '1' } };
+
+    sinon.stub(User, 'findAllUsers').yields(null, allUsers);
+
+    handler(req, null, function(err, users) {
+      expect(err).to.be.null;
+      expect(users).to.eql(allUsers);
+      done();
+    })
+  })
+});
+``
 
 
 ## Putting the pieces together - writing integration tests
