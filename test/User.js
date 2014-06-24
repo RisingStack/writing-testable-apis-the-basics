@@ -5,8 +5,8 @@ var mongoose = require('mongoose');
 var handler = require('./../lib/User');
 var User = mongoose.model('User');
 
-describe('unit', function() {
-  it('is great', function(done) {
+describe('User', function() {
+  it('#findUnicorns', function(done) {
     var unicorns = [ 'unicorn1', 'unicorn2' ];
     var req = { query: { world: '1' } };
 

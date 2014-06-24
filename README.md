@@ -100,7 +100,7 @@ npm install sinon --save-dev
 ```
 
 As we are doing TDD, first let's write our (initially) failing unit test for a Mongoose model.
-It will be a modell called `User` with a method `findUnicorns`.
+It will be a modell called `User` with a static method `findUnicorns`.
 
 ```javascript
 var sinon = require('sinon');
@@ -110,8 +110,8 @@ var mongoose = require('mongoose');
 var handler = require('./../lib/User');
 var User = mongoose.model('User');
 
-describe('unit', function() {
-  it('is great', function(done) {
+describe('User', function() {
+  it('#findUnicorns', function(done) {
     var unicorns = [ 'unicorn1', 'unicorn2' ];
     var req = { query: { world: '1' } };
 
@@ -126,6 +126,7 @@ describe('unit', function() {
 });
 ```
 
+What is going on here?
 
 ## Putting the pieces together - writing integration tests
 
