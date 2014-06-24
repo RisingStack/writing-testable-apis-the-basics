@@ -107,7 +107,7 @@ var sinon = require('sinon');
 var expect = require('chai').expect;
 
 var mongoose = require('mongoose');
-var handler = require('./unit');
+var handler = require('../lib/User');
 var User = mongoose.model('User');
 
 describe('User', function() {
@@ -124,7 +124,7 @@ describe('User', function() {
     })
   })
 });
-``
+```
 
 
 ## Putting the pieces together - writing integration tests
