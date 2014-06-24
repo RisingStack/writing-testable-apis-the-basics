@@ -100,7 +100,7 @@ npm install sinon --save-dev
 ```
 
 As we are doing TDD, first let's write our (initially) failing unit test for a Mongoose model.
-It will be a modell called `User` with a method `findAllUsers`.
+It will be a modell called `User` with a method `findUnicorns`.
 
 ```javascript
 var sinon = require('sinon');
