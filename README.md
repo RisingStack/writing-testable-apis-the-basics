@@ -107,19 +107,19 @@ var sinon = require('sinon');
 var expect = require('chai').expect;
 
 var mongoose = require('mongoose');
-var handler = require('../lib/User');
+var handler = require('./../lib/User');
 var User = mongoose.model('User');
 
-describe('User', function() {
-  it('returns all the users', function(done) {
-    var allUsers = [ 'user1', 'user2' ];
+describe('unit', function() {
+  it('is great', function(done) {
+    var unicorns = [ 'unicorn1', 'unicorn2' ];
     var req = { query: { world: '1' } };
 
-    sinon.stub(User, 'findAllUsers').yields(null, allUsers);
+    sinon.stub(User, 'findUnicorns').yields(null, unicorns);
 
     handler(req, null, function(err, users) {
       expect(err).to.be.null;
-      expect(users).to.eql(allUsers);
+      expect(users).to.eql(unicorns);
       done();
     })
   })
