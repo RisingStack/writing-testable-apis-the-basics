@@ -102,6 +102,12 @@ npm install sinon --save-dev
 As we are doing TDD, first let's write our (initially) failing unit test for a Mongoose model.
 It will be a model called `User` with a static method `findUnicorns`.
 
+How to do this? Let's take a look at the necessary steps:
+
+- start with the test setup
+- calling the object under test's method
+- finally asserting
+
 ```javascript
 var sinon = require('sinon');
 var expect = require('chai').expect;
@@ -112,21 +118,24 @@ var User = mongoose.model('User');
 
 describe('User', function() {
   it('#findUnicorns', function(done) {
+    // test setup
     var unicorns = [ 'unicorn1', 'unicorn2' ];
     var req = { query: { world: '1' } };
 
+    // mocking MongoDB
     sinon.stub(User, 'findUnicorns').yields(null, unicorns);
 
+    // calling the test case
     handler(req, null, function(err, users) {
+      // asserting
       expect(err).to.be.null;
       expect(users).to.eql(unicorns);
+      // as our test is asynchronous, we have to tell mocha that it is finished
       done();
     })
   });
 });
 ```
-
-What is going on here? We want to
 
 ## Putting the pieces together - writing integration tests
 
