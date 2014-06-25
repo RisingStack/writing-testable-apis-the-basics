@@ -45,7 +45,7 @@ under the `test` folder.
 Also, it is convenient to put it into your `package.json`'s scripts section, so it can be
 run using the `npm test` command.
 
-```
+```javascript
   "scripts": {
     "test": "mocha test"
   }
@@ -56,14 +56,14 @@ place it on the `PATH`.
 
 ### Adding chai to your project
 
-```
+```bash
 npm install chai --save-dev
 ```
 
 Then using [chai](http://chai.com) it is time to write the first test case, just to demonstrate
 how mocha and chai plays together.
 
-```
+```javascript
 // test/string.js
 var expect = require('chai').expect;
 
@@ -95,12 +95,12 @@ behavior of the mocked out dependencies. For this purpose we are going to use
 
 Let's take an example of mocking out MongoDB. Sure, first you will need `sinon` installed.
 
-```
+```bash
 npm install sinon --save-dev
 ```
 
 As we are doing TDD, first let's write our (initially) failing unit test for a Mongoose model.
-It will be a modell called `User` with a static method `findUnicorns`.
+It will be a model called `User` with a static method `findUnicorns`.
 
 ```javascript
 var sinon = require('sinon');
@@ -122,11 +122,11 @@ describe('User', function() {
       expect(users).to.eql(unicorns);
       done();
     })
-  })
+  });
 });
 ```
 
-What is going on here?
+What is going on here? We want to
 
 ## Putting the pieces together - writing integration tests
 
