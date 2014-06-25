@@ -137,6 +137,9 @@ describe('User', function() {
 });
 ```
 
+Nice, huh? The "only" job left here is to do the actual implementation.
+(it can be found in the `lib` folder)
+
 ## Putting the pieces together - writing integration tests
 
 - do not mock out databases
