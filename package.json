@@ -17,10 +17,12 @@
   },
   "homepage": "https://github.com/oroce/risingstack-blogpost",
   "dependencies": {
+    "express": "^4.4.5",
     "mongoose": "^3.8.12"
   },
   "devDependencies": {
     "chai": "^1.9.1",
+    "hippie": "^0.3.0",
     "mocha": "^1.20.1",
     "sinon": "^1.10.2"
   }

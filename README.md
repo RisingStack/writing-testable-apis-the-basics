@@ -153,5 +153,29 @@ Add hippie to your project with:
 npm install hippie --save-dev
 ```
 
+To demonstrate what hippie is capable of, let's create an HTTP endpoint!
+
+This endpoint will serve `GET` requests at `/users`. For building APIs using JSON,
+you can use [json:api](http://jsonapi.org/) as a reference.
+
+```javascript
+var hippie = require('hippie');
+var server = require('../../lib/Server');
+
+describe('Server', function () {
+  describe('/users endpoint', function () {
+    it('returns a user based on the id', function (done) {
+      hippie(server)
+        .json()
+        .get('/users/1')
+        .expectStatus(200)
+        .end(function(err, res, body) {
+          if (err) throw err;
+          done();
+        });
+    });
+  });
+});
+```
 
 ## Mock out third-party APIs
