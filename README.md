@@ -144,8 +144,8 @@ Nice, huh? The "only" job left here is to do the actual implementation.
 
 // some intro
 
-For integration tests we will use [hippie](https://github.com/vesln/hippie). `hippie` is a
-thin request wrapper that enables powerful and intuitive API testing.
+For integration tests we will use [hippie](https://github.com/vesln/hippie).
+hippie is a thin request wrapper that enables powerful and intuitive API testing.
 
 Add hippie to your project with:
 
