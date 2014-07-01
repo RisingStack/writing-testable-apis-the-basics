@@ -142,6 +142,16 @@ Nice, huh? The "only" job left here is to do the actual implementation.
 
 ## Putting the pieces together - writing integration tests
 
-- do not mock out databases
+// some intro
+
+For integration tests we will use [hippie](https://github.com/vesln/hippie). `hippie` is a
+thin request wrapper that enables powerful and intuitive API testing.
+
+Add hippie to your project with:
+
+```bash
+npm install hippie --save-dev
+```
+
 
 ## Mock out third-party APIs
