@@ -5,23 +5,6 @@ Testing done right is not easy.
 It is not just about how you write your tests, but also how you design your entire codebase.
 This post intends to clear that up in the context of HTTP APIs.
 
-## Unit tests
-
-Unit tests are the basic building block of tests, where each test case is independent from
-others. Unit tests provide a living documentation of the system and are
-extremely valuable for design feedback: one looking at your test cases can figure out easily what
-the given unit does, how you engineered it, what interfaces does it expose.
-
-As a side effect, unit tests can verify if your units work correctly.
-
-## Integration tests
-
-All our unit tests are passing, great! But how will the system as a whole function?
-This is where integration tests come in.
-
-During integration testing unit tested parts are combined to verify functional and
-performance requirements.
-
 ## Setting up your test environment
 
 In order to run our test cases, we need a test runner and an assertion library.
@@ -80,6 +63,13 @@ describe('Math', function () {
 The above test can be run with `npm test`.
 
 ## Designing your codebase - time for unit tests
+
+Unit tests are the basic building block of tests, where each test case is independent from
+others. Unit tests provide a living documentation of the system and are
+extremely valuable for design feedback: one looking at your test cases can figure out easily what
+the given unit does, how you engineered it, what interfaces does it expose.
+
+As a side effect, unit tests can verify if your units work correctly.
 
 The magic word here is: TDD, meaning Test-drive development.
 TDD is the process of writing an initially failing test case, that defines
@@ -142,7 +132,11 @@ Nice, huh? The "only" job left here is to do the actual implementation.
 
 ## Putting the pieces together - writing integration tests
 
-// some intro
+All our unit tests are passing, great! But how will the system as a whole function?
+This is where integration tests come in.
+
+During integration testing unit tested parts are combined to verify functional and
+performance requirements.
 
 For integration tests we will use [hippie](https://github.com/vesln/hippie).
 hippie is a thin request wrapper that enables powerful and intuitive API testing.
