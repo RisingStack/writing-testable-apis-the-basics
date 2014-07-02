@@ -24,6 +24,6 @@ describe('User', function() {
 
       // as our test is asynchronous, we have to tell mocha that it is finished
       done();
-    })
+    });
   });
 });
