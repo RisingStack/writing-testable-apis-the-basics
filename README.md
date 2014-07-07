@@ -1,4 +1,4 @@
-# Writing testable HTTP APIs - the basics
+# Writing testable HTTP APIs using Node.js - the basics
 
 I remember writing my first test cases - it was everything but nice and clean.
 Testing done right is not easy.
