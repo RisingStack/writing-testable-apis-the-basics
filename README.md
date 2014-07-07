@@ -178,4 +178,4 @@ describe('Server', function () {
 The above example queries the server for the user with id=1. You can check the
 basic implementation in the `lib/Server.js` file.
 
-## Mock out third-party APIs
+## Next up
