@@ -4,6 +4,8 @@ I remember writing my first test cases - it was everything but nice and clean.
 Testing done right is not easy.
 It is not just about how you write your tests, but also how you design your entire codebase.
 This post intends to clear that up in the context of HTTP APIs.
+All the examples use [Joyent's](http://www.joyent.com/) [restify framework](https://github.com/mcavage/node-restify),
+and can be found at [RisingStack](http://risingstack.com)'s [Github](https://github.com/RisingStack/writing-testable-apis-the-basics) page.
 
 ## Setting up your test environment
 
