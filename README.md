@@ -179,3 +179,7 @@ The above example queries the server for the user with id=1. You can check the
 basic implementation in the `lib/Server.js` file.
 
 ## Next up
+
+Now you have learnt all the basics - but what will come next? We will dive deeper in how we
+write APIs at [RisingStack](http://risingstack.com), including mocking external APIs like Facebook and
+debug performances issues using DTrace.
