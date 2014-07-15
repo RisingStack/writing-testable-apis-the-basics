@@ -122,7 +122,7 @@ describe('User', function() {
 
     // calling the test case
     User.colorizeUnicorns(query, function(err, coloredUnicorns) {
-      
+
       // asserting
       expect(err).to.be.null;
       expect(coloredUnicorns).to.eql(['unicorn1-pink', 'unicorn2-purple']);
@@ -170,10 +170,7 @@ describe('Server', function () {
         .json()
         .get('/users/1')
         .expectStatus(200)
-        .end(function(err, res, body) {
-          if (err) throw err;
-          done();
-        });
+        .end(done);
     });
   });
 });
