@@ -75,7 +75,7 @@ the given unit does, how you engineered it, what interfaces does it expose.
 
 As a side effect, unit tests can verify if your units work correctly.
 
-The magic word here is: TDD, meaning Test-drive development.
+The magic word here is: TDD, meaning Test-driven development.
 TDD is the process of writing an initially failing test case, that defines
 a function - this is where you design the interfaces of your unit.
 
