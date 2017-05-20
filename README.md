@@ -25,7 +25,7 @@ npm install mocha --save-dev
 mkdir test
 ```
 
-It will install [mocha](http://visionmedia.github.io/mocha/) and put it as a development
+It will install [mocha](http://mochajs.org/) and put it as a development
 dependency to your `package.json`. Then you should put all your test cases
 under the `test` folder.
 
